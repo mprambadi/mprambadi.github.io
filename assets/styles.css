@@ -81,6 +81,7 @@ h1 { max-width: 850px; margin: 0; font-size: clamp(3.7rem, 7.5vw, 7.3rem); }
 .project h3 { margin: 0; font: 500 clamp(2rem, 4vw, 3.6rem)/1.05 var(--serif); letter-spacing: -.035em; }
 .project-role { margin: 8px 0 18px; color: #527340; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
 .project-body div > p:not(.project-role) { max-width: 750px; color: var(--muted); }
+.project-body div > p a { color: var(--green); font-weight: 700; text-underline-offset: 3px; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 22px 0 0; list-style: none; }
 .tag-list li { padding: 5px 9px; border: 1px solid var(--line); font: .65rem var(--mono); text-transform: uppercase; }
 .architecture { margin: 38px 0 0 90px; padding: 22px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); background-image: linear-gradient(#e7e6df 1px, transparent 1px), linear-gradient(90deg, #e7e6df 1px, transparent 1px); background-size: 20px 20px; }
