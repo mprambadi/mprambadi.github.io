@@ -2,7 +2,6 @@
   'use strict';
 
   var form = document.querySelector('.contact-form');
-  var frame = document.getElementById('contact-response-frame');
   var status = document.getElementById('contact-status');
   var submit = form.querySelector('button[type="submit"]');
   var submissionId = form.elements.submissionId;
