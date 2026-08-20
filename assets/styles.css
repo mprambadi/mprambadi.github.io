@@ -109,8 +109,14 @@ h1 { max-width: 850px; margin: 0; font-size: clamp(3.7rem, 7.5vw, 7.3rem); }
 .contact-form legend { margin-bottom: 18px; color: #9cb4ac; font: .67rem var(--mono); letter-spacing: .05em; text-transform: uppercase; }
 .contact-form label { display: block; margin: 13px 0 5px; color: #bdd0ca; font: .67rem var(--mono); text-transform: uppercase; }
 .contact-form input, .contact-form textarea { width: 100%; padding: 11px; border: 1px solid #6d8980; border-radius: 0; background: #214a40; color: var(--white); font: inherit; resize: vertical; }
-.contact-form button { margin-top: 16px; padding: 13px 18px; border: 1px solid #6d8980; background: transparent; color: #9cb4ac; font: 700 .72rem var(--mono); text-transform: uppercase; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--lime); outline: 0; box-shadow: 0 0 0 2px var(--lime); }
+.contact-form button { margin-top: 16px; padding: 13px 18px; border: 1px solid var(--lime); background: var(--lime); color: var(--green); cursor: pointer; font: 700 .72rem var(--mono); text-transform: uppercase; }
 .contact-form :disabled { cursor: not-allowed; opacity: .78; }
+.contact-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+#contact-turnstile { min-height: 65px; margin-top: 18px; }
+.contact-status { min-height: 1.6em; margin: 12px 0 0; color: #bdd0ca; font: .72rem var(--mono); }
+.contact-status[data-state="success"] { color: var(--lime); }
+.contact-status[data-state="error"] { color: #ffd1c7; }
 .contact-note { margin-top: 20px; color: #9cb4ac; font: .67rem var(--mono); text-transform: uppercase; }
 
 footer { min-height: 130px; padding: 30px max(24px, calc((100vw - 1180px) / 2)); display: flex; align-items: center; gap: 32px; border-top: 1px solid #3e5d54; background: var(--green); color: #a9bdb6; font-size: .74rem; }

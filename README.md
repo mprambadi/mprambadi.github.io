@@ -8,6 +8,7 @@ Maulana Prambadi, Backend / Platform Engineer.
 - `index.html` - one-page portfolio
 - `cv.html` - printable CV source
 - `assets/styles.css` - shared site and print styles
+- `assets/contact.js` - contact form and Turnstile client behavior
 - `assets/maulana-prambadi-cv.pdf` - downloadable CV
 - `CNAME` - GitHub Pages custom domain
 - `_config.yml` - GitHub Pages metadata
@@ -21,6 +22,11 @@ python3 -m http.server 8000
 ```
 
 Open [http://localhost:8000](http://localhost:8000).
+
+## Contact Form
+
+Contact form uses Cloudflare Turnstile and posts to private Apps Script backend.
+Turnstile tokens are single-use; browser resets widget after every attempt.
 
 ## Content Updates
 
