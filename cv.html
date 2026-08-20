@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maulana R. | Curriculum Vitae</title>
+  <meta name="description" content="Curriculum vitae for Maulana R., Backend and Platform Engineer.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="cv-page">
+  <a class="skip-link" href="#cv-main">Skip to CV</a>
+  <div class="cv-toolbar">
+    <a href="index.html">← Portfolio</a>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+  <main class="cv-document" id="cv-main">
+    <header class="cv-header">
+      <div>
+        <h1>Maulana R.</h1>
+        <p>Backend / Platform Engineer · 8+ years</p>
+      </div>
+      <p>Jakarta, Indonesia<br><a href="https://mprambadi.my.id">mprambadi.my.id</a><br><a href="https://github.com/mprambadi">github.com/mprambadi</a></p>
+    </header>
+
+    <section class="cv-summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Profile</h2>
+      <p>Backend and platform engineer who shipped 40+ production services across healthcare, real estate, telecom, fintech, government, and enterprise systems. Polyglot backend in Go, Node.js/TypeScript, and .NET; GCP-primary platform work with Kubernetes, event-driven systems, and production observability.</p>
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Core Skills</h2>
+      <div class="cv-skills">
+        <p><strong>Languages</strong> Go, Node.js/TypeScript, C# (.NET), PHP</p>
+        <p><strong>Platform</strong> Kubernetes, Docker, Helm, GCP, AWS, Azure</p>
+        <p><strong>Systems</strong> Kafka, GCP Pub/Sub, Redis, gRPC, GraphQL, REST</p>
+        <p><strong>Data</strong> PostgreSQL, MySQL, SQL Server, MongoDB, Elasticsearch, ClickHouse</p>
+        <p><strong>Operations</strong> OpenTelemetry, Datadog, Sentry, LaunchDarkly</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="cv-experience-title">
+      <h2 id="cv-experience-title">Experience</h2>
+      <article class="cv-role">
+        <header><div><h3>Refactory</h3><p>Senior Software Engineer</p></div><p>2017—Present</p></header>
+        <ul>
+          <li>Shipped 40+ production services across 7+ client domains: real estate, healthcare, government, telecom, fintech, LMS, and platform.</li>
+          <li>Standardized Datadog, Sentry, OpenTelemetry, and GCP Pub/Sub patterns across engagements, cutting new-project onboarding from weeks to days.</li>
+          <li>Introduced AI-assisted development practices agency-wide, cutting boilerplate time by approximately 25%.</li>
+        </ul>
+        <div class="cv-project">
+          <h4>Keller Williams / KWRI · Backend Engineer <span>2020—2024</span></h4>
+          <ul>
+            <li>Shipped 20+ Go, NestJS, Apollo GraphQL, and Lumen microservices on GCP Pub/Sub powering KW Connect.</li>
+            <li>Migrated a 10+ service legacy platform from AWS to GCP/GKE and standardized Kubernetes, auth, and observability patterns.</li>
+          </ul>
+        </div>
+        <div class="cv-project">
+          <h4>RSUD Regional Hospital · Platform Engineer <span>2026—Present</span></h4>
+          <ul>
+            <li>Moved database access to PgBouncer with read/write replicas, cutting application CPU and load from 100% to 30%.</li>
+            <li>Migrated deployment to k3s, eliminating release downtime and enabling horizontal scaling.</li>
+          </ul>
+        </div>
+        <div class="cv-project">
+          <h4>Cellcast · Backend Engineer <span>2024—2026</span></h4>
+          <ul><li>Built Go and Node.js backends, AWS Lambdas, and an SMPP proxy handling 1 million SMS sends per hour.</li></ul>
+        </div>
+        <div class="cv-project">
+          <h4>Bio Farma · Backend Engineer <span>2024—2025</span></h4>
+          <ul><li>Architected a six-service healthcare ecosystem using NestJS, MongoDB, GCP Pub/Sub, and OpenTelemetry.</li></ul>
+        </div>
+        <div class="cv-project">
+          <h4>SEV-2 Hosted Services · Platform Engineer <span>2024—Present</span></h4>
+          <ul><li>Built and operated a multi-tenant platform with shared auth, observability, and deployment patterns.</li></ul>
+        </div>
+      </article>
+
+      <article class="cv-role">
+        <header><div><h3>BSI · Mitsubishi group</h3><p>Software Engineer</p></div><p>2022—Present</p></header>
+        <ul>
+          <li>Delivered timesheet, supplier portal, and canteen systems on .NET 7, Clean Architecture, EF Core, and SQL Server.</li>
+          <li>Shipped REST APIs with health checks and Quartz scheduling, automating previously manual batch workflows.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p><strong>B.Sc. Computer Science</strong> · Institut Teknologi Bandung, 2016</p>
+    </section>
+  </main>
+</body>
+</html>
