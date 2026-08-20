@@ -74,7 +74,7 @@
   });
 
   window.addEventListener('message', function (event) {
-    if (event.source !== frame.contentWindow || !/^https:\/\/[a-z0-9.-]+\.googleusercontent\.com$/.test(event.origin)) return;
+    if (!/^https:\/\/[a-z0-9.-]+\.googleusercontent\.com$/.test(event.origin)) return;
 
     var data;
     try {
