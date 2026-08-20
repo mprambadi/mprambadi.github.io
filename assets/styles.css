@@ -97,9 +97,6 @@ h1 { max-width: 850px; margin: 0; font-size: clamp(3.7rem, 7.5vw, 7.3rem); }
 
 .about-section { padding-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(50px, 10vw, 140px); }
 .about-copy { padding-top: 42px; color: var(--muted); font-size: 1.08rem; }
-.education { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--ink); }
-.education span { display: block; margin-bottom: 8px; color: var(--muted); font: .68rem var(--mono); text-transform: uppercase; }
-
 .contact-section { padding: clamp(90px, 12vw, 150px) max(24px, calc((100vw - 1180px) / 2)); background: var(--green); color: var(--white); }
 .contact-section .section-index { color: #9cb4ac; }
 .contact-section h2 { max-width: 900px; margin: 0; font-size: clamp(3.3rem, 7vw, 6.8rem); }
