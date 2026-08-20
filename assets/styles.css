@@ -178,14 +178,17 @@ footer a { text-underline-offset: 3px; }
   .button:hover { transform: none; }
 }
 
-@page { size: A4; margin: 12mm; }
+@page { size: A4; margin: 10mm; }
 @media print {
-  .cv-page { background: white; font-size: 9.5pt; }
+  .cv-page { background: white; font-size: 9pt; line-height: 1.34; }
   .cv-toolbar, .skip-link { display: none; }
-  .cv-document { width: auto; margin: 0; padding: 0; box-shadow: none; }
-  .cv-document section { margin-top: 14px; }
-  .cv-header { padding-bottom: 11px; }
-  .cv-role { margin-top: 10px; }
-  .cv-project h4 { margin-top: 8px; }
+  .cv-document { width: 117.65%; margin: 0; padding: 0; box-shadow: none; zoom: .85; }
+  .cv-document section { margin-top: 11px; }
+  .cv-header { padding-bottom: 9px; }
+  .cv-document h2 { margin-bottom: 7px; }
+  .cv-document ul { margin: 3px 0; }
+  .cv-document li { margin: 2px 0; }
+  .cv-role { margin-top: 8px; }
+  .cv-project h4 { margin-top: 6px; }
   a { color: inherit; text-decoration: none; }
 }
