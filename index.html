@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maulana Prambadi | Backend / Platform Engineer</title>
@@ -11,7 +12,6 @@
   <meta property="og:title" content="Maulana Prambadi | Backend / Platform Engineer">
   <meta property="og:description" content="8+ years building production systems in Go, Node.js, and C# across Kubernetes, GCP, AWS, and on-premises environments.">
   <meta property="og:url" content="https://mprambadi.my.id/">
-  <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,251 +26,228 @@
       ]
     }
   </script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Maulana Prambadi, home">MP<span>.</span></a>
-    <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,500;9..144,1,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = { theme: { extend: { fontFamily: { serif: ['"Instrument Serif"','"Fraunces"','Georgia','serif'], sans: ['Inter','system-ui','sans-serif'], mono: ['"JetBrains Mono"','monospace'] } } } }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+    ::selection{background:#0f62fe;color:white}
+    h1,h2,h3,.font-serif{ line-height:1.08 !important; padding-bottom:0.06em; overflow:visible; }
+    .contact-honeypot{ position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+  </style>
+
+</head>
+<body class="bg-[#f4f7fb] text-zinc-900 antialiased">
+  <a class="skip-link fixed z-20 top-3 left-3 px-3 py-2 bg-white text-[#102a43] -translate-y-40 focus:translate-y-0" href="#main">Skip to content</a>
+  <main id="main">
+<!-- Header -->
+  <header class="w-[min(1180px,calc(100%-48px))] mx-auto min-h-[88px] flex items-center justify-between border-b border-[#c7d0dc]">
+    <a class="font-serif text-[1.45rem] font-bold tracking-tight">MP<span class="text-[#0f62fe]">.</span></a>
+    <nav class="hidden sm:flex gap-8 font-mono text-[11px] tracking-[0.08em] uppercase">
+      <a href="#work" class="hover:text-[#0f62fe]">Work</a>
+      <a href="#experience" class="hover:text-[#0f62fe]">Experience</a>
+      <a href="#contact" class="hover:text-[#0f62fe]">Contact</a>
     </nav>
+    <a href="#contact" class="sm:hidden font-mono text-[11px] tracking-widest uppercase border border-[#102a43] px-3 py-1">Contact</a>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Solo, Indonesia</p>
-        <h1 id="hero-title">I build the systems<br>products rely on.</h1>
-        <p class="hero-role">Backend / Platform Engineer</p>
-        <p class="hero-lede">8+ years shipping production services across real estate, healthcare, government, telecom, fintech, and enterprise platforms. Go, Node.js, and C# at the core, building backend systems across Kubernetes, GCP, AWS, and on-premises environments.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore selected work</a>
-          <a class="button button-secondary" href="assets/maulana-prambadi-cv.pdf" download>Download CV</a>
+  <!-- Hero -->
+  <section class="w-[min(1180px,calc(100%-48px))] mx-auto py-[72px] md:py-[100px] lg:py-[120px] grid lg:grid-cols-[1.55fr_0.7fr] gap-12 lg:gap-16 items-center overflow-visible">
+    <div>
+      <p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#526071] mb-6 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#0f62fe]"></span> Solo, Indonesia · Available for backend / platform roles</p>
+      <h1 class="font-serif text-[clamp(2.8rem,7vw,5.8rem)] leading-[0.95] tracking-[-0.05em]">I build the systems<br><span class="italic font-light">products rely on.</span></h1>
+      <p class="mt-6 text-[#102a43] font-semibold">Backend / Platform Engineer · 8 years · Solo (UTC+7) · Remote with US/AU teams</p>
+      <p class="mt-3 max-w-[62ch] text-[#102a43] text-[16px] leading-relaxed">I help product teams ship <span class="font-semibold">40+ production services</span> that stay observable, scalable, and safe to change — from <span class="font-semibold">20+ microservices</span> at KWRI (US) to <span class="font-semibold">1M SMS/hr</span> (AU) and a <span class="font-semibold">100% → 30%</span> hospital platform fix (ID).</p>
+      <div class="mt-5 grid gap-2.5 max-w-[62ch]">
+        <div class="flex gap-3 text-sm"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#0f62fe] shrink-0"></span><span class="text-[#102a43]"><span class="font-semibold">Platform outcome:</span> <span class="text-[#526071]">Standardized observability + Pub/Sub patterns — new-project onboarding <span class="font-semibold text-[#102a43]">weeks → days</span></span></span></div>
+        <div class="flex gap-3 text-sm"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#0f62fe] shrink-0"></span><span class="text-[#102a43]"><span class="font-semibold">Reliability outcome:</span> <span class="text-[#526071]">Hospital PgBouncer + k3s — <span class="font-semibold text-[#102a43]">zero-downtime releases</span>, horizontal scale</span></span></div>
+        <div class="flex gap-3 text-sm"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#0f62fe] shrink-0"></span><span class="text-[#102a43]"><span class="font-semibold">Scale outcome:</span> <span class="text-[#526071]">Migrated 10+ services AWS → GCP/GKE; multi-tenant platform with shared auth</span></span></div>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#work" class="inline-flex items-center justify-center min-h-[44px] px-6 bg-[#102a43] text-white font-mono text-[11px] tracking-widest uppercase hover:translate-y-[-2px] transition">Explore selected work →</a>
+        <a href="#" class="inline-flex items-center justify-center min-h-[44px] px-6 border border-[#102a43] text-[#102a43] font-mono text-[11px] tracking-widest uppercase hover:bg-white transition">Download CV ↓</a>
+      </div>
+      <p class="mt-6 font-mono text-[10px] tracking-widest uppercase text-[#829ab1]">40+ services · 7 domains · 1M SMS / hr peak</p>
+    </div>
+    <aside class="bg-[#102a43] text-white shadow-[12px_12px_0_#e2e8f0] max-w-[420px] lg:max-w-none">
+      <div class="flex justify-between items-center px-5 py-3 border-b border-[#334e68] font-mono text-[10px] tracking-[0.1em] uppercase text-[#d7e5ff]">
+        <span>engineer.profile — live</span><span>01</span>
+      </div>
+      <dl class="px-6 py-2">
+        <div class="py-4 border-b border-[#334e68]"><dt class="font-mono text-[10px] tracking-widest uppercase text-[#a8bed3] mb-1">Focus</dt><dd class="font-mono text-sm">Backend + Platform</dd></div>
+        <div class="py-4 border-b border-[#334e68]"><dt class="font-mono text-[10px] tracking-widest uppercase text-[#a8bed3] mb-1">Languages</dt><dd class="font-mono text-sm">Go · TypeScript · C#</dd></div>
+        <div class="py-4 border-b border-[#334e68]"><dt class="font-mono text-[10px] tracking-widest uppercase text-[#a8bed3] mb-1">Platform</dt><dd class="font-mono text-sm">Kubernetes · GCP · AWS</dd></div>
+        <div class="py-4 border-b border-[#334e68]"><dt class="font-mono text-[10px] tracking-widest uppercase text-[#a8bed3] mb-1">Systems</dt><dd class="font-mono text-sm">Event-driven · distributed</dd></div>
+        <div class="py-4 flex items-center gap-2"><dt class="font-mono text-[10px] tracking-widest uppercase text-[#a8bed3]">Signal</dt><dd class="font-mono text-sm flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#78a9ff] animate-pulse"></span> Production proven</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <!-- Proof -->
+  <section class="bg-[#102a43] text-white grid grid-cols-2 lg:grid-cols-4 border-y border-[#1e3a5f]">
+    <div class="px-6 lg:px-10 py-8 border-r border-[#334e68] border-b lg:border-b-0"><div class="font-serif text-4xl lg:text-5xl">40+</div><div class="font-mono text-[10px] tracking-widest uppercase text-[#c4d3e3] mt-1">production services</div><div class="font-mono text-[10px] text-[#78a9ff] mt-1">shipped · 7 domains</div></div>
+    <div class="px-6 lg:px-10 py-8 border-r-0 lg:border-r border-[#334e68] border-b lg:border-b-0"><div class="font-serif text-4xl lg:text-5xl">20+</div><div class="font-mono text-[10px] tracking-widest uppercase text-[#c4d3e3] mt-1">KWRI microservices + MFEs</div><div class="font-mono text-[10px] text-[#78a9ff] mt-1">🇺🇸 US · migrated AWS→GCP</div></div>
+    <div class="px-6 lg:px-10 py-8 border-r border-[#334e68]"><div class="font-serif text-4xl lg:text-5xl">7+</div><div class="font-mono text-[10px] tracking-widest uppercase text-[#c4d3e3] mt-1">client domains</div><div class="font-mono text-[10px] text-[#78a9ff] mt-1">onboarding weeks→days</div></div>
+    <div class="px-6 lg:px-10 py-8"><div class="font-serif text-4xl lg:text-5xl">1M</div><div class="font-mono text-[10px] tracking-widest uppercase text-[#c4d3e3] mt-1">SMS sends / hour</div><div class="font-mono text-[10px] text-[#78a9ff] mt-1">🇦🇺 AU · SMPP peak</div></div>
+  </section>
+
+  <!-- Expertise -->
+  <section class="w-[min(1180px,calc(100%-48px))] mx-auto py-20">
+    <div class="max-w-3xl mb-12">
+      <p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#526071]">01 / EXPERTISE</p>
+      <h2 class="font-serif text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.95] tracking-[-0.04em] mt-2">Depth where systems<br>meet operations.</h2>
+      <p class="text-[#526071] mt-4">What I give a team: backend services + the platform that keeps them <span class="font-semibold text-[#102a43]">observable, scalable, and safe to change</span>. Broad stack, clear spine — Go/TS/C# on K8s/GCP.</p>
+    </div>
+    <div class="grid md:grid-cols-2 border-t border-l border-[#c7d0dc]">
+      <article class="p-8 border-r border-b border-[#c7d0dc]"><div class="font-mono text-[11px] text-[#526071]">01</div><h3 class="font-serif text-xl mt-10 mb-3">Backend systems</h3><p class="text-[#526071] text-sm leading-relaxed">Production APIs and microservices in Go, Node.js/TypeScript, and .NET. REST, GraphQL, gRPC, auth, and service boundaries built for long-term ownership.</p><p class="font-mono text-[10px] tracking-widest uppercase text-[#102a43] mt-6">Go / NestJS / .NET / GraphQL</p></article>
+      <article class="p-8 border-r border-b border-[#c7d0dc]"><div class="font-mono text-[11px] text-[#526071]">02</div><h3 class="font-serif text-xl mt-10 mb-3">Platform engineering</h3><p class="text-[#526071] text-sm leading-relaxed">Kubernetes delivery, reusable service patterns, cloud migration, and multi-tenant infrastructure across GCP, AWS, and Azure.</p><p class="font-mono text-[10px] tracking-widest uppercase text-[#102a43] mt-6">Kubernetes / Docker / Helm / GCP</p></article>
+      <article class="p-8 border-r border-b border-[#c7d0dc]"><div class="font-mono text-[11px] text-[#526071]">03</div><h3 class="font-serif text-xl mt-10 mb-3">Data and events</h3><p class="text-[#526071] text-sm leading-relaxed">Event-driven flows and dependable data paths using Pub/Sub, Redis, PostgreSQL, and MongoDB.</p><p class="font-mono text-[10px] tracking-widest uppercase text-[#102a43] mt-6">Pub/Sub / PostgreSQL / Redis / MongoDB</p></article>
+      <article class="p-8 border-r border-b border-[#c7d0dc]"><div class="font-mono text-[11px] text-[#526071]">04</div><h3 class="font-serif text-xl mt-10 mb-3">Production visibility</h3><p class="text-[#526071] text-sm leading-relaxed">Observability as product infrastructure — tracing, metrics, feature controls, and error tracking standardized across services.</p><p class="font-mono text-[10px] tracking-widest uppercase text-[#102a43] mt-6">OpenTelemetry / Datadog / Sentry</p></article>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-white border-y border-[#e2e8f0]">
+    <div class="w-[min(1180px,calc(100%-48px))] mx-auto py-20">
+      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-end mb-12">
+        <div><p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#526071]">02 / SELECTED WORK</p><h2 class="font-serif text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.95] tracking-[-0.04em] mt-2">Systems shipped<br>under real constraints.</h2></div>
+        <p class="text-[#526071]">Selected engagements spanning high-throughput messaging, healthcare reliability, cloud platforms, and enterprise operations.</p>
+        <div class="mt-3 flex flex-wrap gap-2 font-mono text-[10px] tracking-widest uppercase">
+          <span class="px-2.5 py-1 rounded-full bg-[#f1f5f9] border border-[#e2e8f0]">🇺🇸 US · KWRI — scale</span>
+          <span class="px-2.5 py-1 rounded-full bg-[#f1f5f9] border border-[#e2e8f0]">🇦🇺 Australia · Cellcast — throughput</span>
+          <span class="px-2.5 py-1 rounded-full bg-[#f1f5f9] border border-[#e2e8f0]">🇮🇩 Indonesia · reliability / platform</span>
+        </div>
+        <p class="mt-2 font-mono text-[10px] tracking-widest uppercase text-[#829ab1]">Scan tip for CTO/HM: featured 01 + 02–03 give you scale + reliability story in 15s</p>
+      </div>
+      <div class="border-t border-[#c7d0dc]">
+        <!-- Featured -->
+        <article class="py-8 border-b border-[#c7d0dc]">
+          <div class="flex justify-between font-mono text-[11px] tracking-widest uppercase text-[#526071] mb-6"><span>2020—2024 · 🇺🇸 US · Real estate platform</span><span>Featured · 01</span></div>
+          <div class="grid lg:grid-cols-[64px_1fr] gap-6">
+            <div class="font-mono text-xs text-[#526071] hidden lg:block">01</div>
+            <div>
+              <h3 class="font-serif text-[2rem] lg:text-[2.6rem] leading-none tracking-tight">Keller Williams / KWRI</h3>
+              <p class="text-[#0f62fe] font-semibold text-xs tracking-widest uppercase mt-2">Backend Engineer · 🇺🇸 US</p>
+              <p class="text-[#526071] mt-4 max-w-3xl"><span class="font-semibold text-[#102a43]">Outcome:</span> Kept a 20+ service real-estate platform shippable while migrating <span class="font-semibold text-[#102a43]">10+ services AWS → GCP/GKE</span>. Shipped 20+ microservices + microfrontends for KW Connect and <a href="#" class="underline decoration-2 underline-offset-4 font-semibold text-[#102a43]">Command</a>, wired APIs + Pub/Sub workflows, hardened observability — <span class="font-semibold text-[#102a43]">no feature freeze</span>.</p>
+              <div class="flex flex-wrap gap-2 mt-5"><span class="px-2.5 py-1 border border-[#c7d0dc] font-mono text-[10px] uppercase">Go</span><span class="px-2.5 py-1 border border-[#c7d0dc] font-mono text-[10px] uppercase">NestJS</span><span class="px-2.5 py-1 border border-[#c7d0dc] font-mono text-[10px] uppercase">GCP Pub/Sub</span><span class="px-2.5 py-1 border border-[#c7d0dc] font-mono text-[10px] uppercase">Kubernetes</span><span class="px-2.5 py-1 border border-[#c7d0dc] font-mono text-[10px] uppercase">OpenTelemetry</span></div>
+              <div class="mt-8 border border-[#e2e8ef] bg-[#f8fafc] bg-[linear-gradient(#e3e8ef_1px,transparent_1px),linear-gradient(90deg,#e3e8ef_1px,transparent_1px)] bg-[size:20px_20px] p-4 flex flex-wrap items-center justify-center gap-2 font-mono text-[10px] uppercase">
+                <span class="px-3 py-1.5 bg-white border border-[#829ab1]">Clients</span><span class="w-8 h-px bg-[#829ab1]"></span><span class="px-3 py-1.5 bg-white border border-[#829ab1]">GraphQL</span><span class="w-8 h-px bg-[#829ab1]"></span><span class="px-3 py-1.5 bg-white border border-[#829ab1]">Services</span><span class="w-8 h-px bg-[#829ab1]"></span><span class="px-3 py-1.5 bg-white border border-[#829ab1]">Pub/Sub</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0">
+          <article class="p-6 border-b md:border-r border-[#e2e8f0]">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-[#526071] flex justify-between"><span>2026 · 🇮🇩 Indonesia · Healthcare</span><span>02</span></div>
+            <h3 class="font-serif text-xl mt-4">RSUD Regional Hospital</h3><p class="text-[#0f62fe] font-semibold text-[10px] tracking-widest uppercase mt-1">Platform Engineer · 🇮🇩 Indonesia</p>
+            <p class="text-sm text-[#526071] mt-3">Moved to PgBouncer + read/write replicas — CPU/load 100% → 30%. Migrated to k3s for zero-downtime releases.</p>
+            <div class="flex flex-wrap gap-1.5 mt-4"><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">PostgreSQL</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">PgBouncer</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">k3s</span></div>
+          </article>
+          <article class="p-6 border-b lg:border-r border-[#e2e8f0]">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-[#526071] flex justify-between"><span>2024—2026 · 🇦🇺 Australia · Telecom</span><span>03</span></div>
+            <h3 class="font-serif text-xl mt-4">Cellcast App</h3><p class="text-[#0f62fe] font-semibold text-[10px] tracking-widest uppercase mt-1">Backend Engineer · 🇦🇺 Australia</p>
+            <p class="text-sm text-[#526071] mt-3">Go + Node.js backends, AWS Lambdas, SMPP proxy at 1M SMS/hr. Dashboards + HubSpot delivery reporting.</p>
+            <div class="flex flex-wrap gap-1.5 mt-4"><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Go</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">SMPP</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Lambda</span></div>
+          </article>
+          <article class="p-6 border-b md:border-r lg:border-r-0 border-[#e2e8f0]">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-[#526071] flex justify-between"><span>2026 · 🇮🇩 Indonesia · Enterprise</span><span>04</span></div>
+            <h3 class="font-serif text-xl mt-4">BSI Internal Platforms</h3><p class="text-[#0f62fe] font-semibold text-[10px] tracking-widest uppercase mt-1">Software Engineer · Mitsubishi · 🇮🇩 Indonesia</p>
+            <p class="text-sm text-[#526071] mt-3">Timesheet, supplier portal, canteen systems on .NET 7 + Quartz + enterprise identity.</p>
+            <div class="flex flex-wrap gap-1.5 mt-4"><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">.NET 7</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">SQL Server</span></div>
+          </article>
+          <article class="p-6 border-b md:border-b-0 md:border-r border-[#e2e8f0]">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-[#526071] flex justify-between"><span>2025—2026 · 🇮🇩 Indonesia · Learning</span><span>05</span></div>
+            <h3 class="font-serif text-xl mt-4">Komatsu LMS</h3><p class="text-[#0f62fe] font-semibold text-[10px] tracking-widest uppercase mt-1">Fullstack Engineer · 🇮🇩 Indonesia</p>
+            <p class="text-sm text-[#526071] mt-3">Enterprise LMS across backend, frontend, mobile. HRIS auth + AI-assisted learning module.</p>
+            <div class="flex flex-wrap gap-1.5 mt-4"><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Supabase</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Helm</span></div>
+          </article>
+          <article class="p-6 col-span-1 md:col-span-2 lg:col-span-2">
+            <div class="font-mono text-[10px] tracking-widest uppercase text-[#526071] flex justify-between"><span>2022—2024 · 🇮🇩 Indonesia · Telecom platform</span><span>06</span></div>
+            <h3 class="font-serif text-xl mt-4">Telkomsel MEA & MEC</h3><p class="text-[#0f62fe] font-semibold text-[10px] tracking-widest uppercase mt-1">Fullstack Engineer · 🇮🇩 Indonesia</p>
+            <p class="text-sm text-[#526071] mt-3">MEA as microfrontend/monorepo on Kubernetes + Keycloak. MEC as OpenAPI-generated order service with RTK Query.</p>
+            <div class="flex flex-wrap gap-1.5 mt-4"><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Kubernetes</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">Keycloak</span><span class="px-2 py-1 bg-[#f1f5f9] font-mono text-[10px] uppercase">OpenAPI</span></div>
+          </article>
         </div>
       </div>
-      <aside class="system-card" aria-label="Engineering profile">
-        <div class="system-card-head"><span>engineer.profile</span><span>01</span></div>
-        <dl>
-          <div><dt>Focus</dt><dd>Backend + Platform</dd></div>
-          <div><dt>Languages</dt><dd>Go, TypeScript, C#</dd></div>
-          <div><dt>Platform</dt><dd>Kubernetes, GCP</dd></div>
-          <div><dt>Systems</dt><dd>Event-driven, distributed</dd></div>
-          <div><dt>Signal</dt><dd><span class="live-dot" aria-hidden="true"></span> Production proven</dd></div>
-        </dl>
-      </aside>
-    </section>
+    </div>
+  </section>
 
-    <section class="proof" aria-label="Career highlights">
-      <div><strong>40+</strong><span>production services</span></div>
-      <div><strong>20+</strong><span>KWRI microservices + microfrontends</span></div>
-      <div><strong>7+</strong><span>client domains</span></div>
-      <div><strong>1M</strong><span>SMS sends / hour</span></div>
-    </section>
+  <!-- Experience + About -->
+  <section id="experience" class="w-[min(1180px,calc(100%-48px))] mx-auto py-20 grid lg:grid-cols-[0.85fr_1.15fr] gap-12">
+    <div>
+      <p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#526071]">03 / EXPERIENCE</p>
+      <h2 class="font-serif text-4xl leading-none tracking-tight mt-2">A career built<br>across boundaries.</h2>
+    </div>
+    <div class="border-t border-[#c7d0dc]">
+      <article class="py-8 grid grid-cols-[110px_1fr] gap-6 border-b border-[#c7d0dc]">
+        <div class="font-mono text-[11px] text-[#526071]">2017—2026</div>
+        <div><h3 class="font-serif text-xl">Senior Software Engineer</h3><p class="text-[#0f62fe] font-semibold text-xs tracking-widest uppercase mt-1">Refactory · Software consultancy</p><p class="text-[#526071] text-sm mt-3">Shipped 40+ production services across 7+ client domains. Standardized observability and Pub/Sub patterns — onboarding from weeks to days.</p></div>
+      </article>
+    </div>
+  </section>
 
-    <section class="section" aria-labelledby="expertise-title">
-      <header class="section-heading">
-        <p class="section-index">01 / EXPERTISE</p>
-        <h2 id="expertise-title">Depth where systems<br>meet operations.</h2>
-        <p>Broad stack, clear spine. I design backend services and the platform foundations that keep them observable, scalable, and safe to change.</p>
-      </header>
-      <div class="expertise-grid">
-        <article>
-          <span class="article-number">01</span>
-          <h3>Backend systems</h3>
-          <p>Production APIs and microservices in Go, Node.js/TypeScript, and .NET. REST, GraphQL, gRPC, auth, and service boundaries built for long-term ownership.</p>
-          <p class="tech-line">Go / NestJS / .NET / GraphQL</p>
-        </article>
-        <article>
-          <span class="article-number">02</span>
-          <h3>Platform engineering</h3>
-          <p>Kubernetes delivery, reusable service patterns, cloud migration, and multi-tenant infrastructure across GCP, AWS, and Azure.</p>
-          <p class="tech-line">Kubernetes / Docker / Helm / GCP</p>
-        </article>
-        <article>
-          <span class="article-number">03</span>
-          <h3>Data and events</h3>
-          <p>Event-driven flows and dependable data paths using Pub/Sub, Redis, PostgreSQL, and MongoDB.</p>
-          <p class="tech-line">Pub/Sub / PostgreSQL / Redis / MongoDB</p>
-        </article>
-        <article>
-          <span class="article-number">04</span>
-          <h3>Production visibility</h3>
-          <p>Observability treated as product infrastructure, with tracing, metrics, feature controls, and error tracking standardized across services.</p>
-          <p class="tech-line">OpenTelemetry / Datadog / Sentry</p>
-        </article>
-      </div>
-    </section>
+  <section class="w-[min(1180px,calc(100%-48px))] mx-auto pb-16 grid lg:grid-cols-2 gap-12 border-t border-[#e2e8f0] pt-12">
+    <div>
+      <p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#526071]">04 / ABOUT</p>
+      <h2 class="font-serif text-4xl leading-none tracking-tight mt-2">Breadth as leverage,<br>not noise.</h2>
+    </div>
+    <div class="text-[#526071] space-y-4 pt-2">
+      <p>I work best at the seam between application code and production infrastructure: shaping service boundaries, tracing failures through distributed systems, and leaving teams with patterns they can reuse.</p>
+      <p>My foundation spans backend, cloud, data, and selective frontend work — helping me make platform decisions grounded in how products are actually built and operated.</p>
+    </div>
+  </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
-      <header class="section-heading section-heading-row">
+  <!-- Contact -->
+  <section id="contact" class="bg-[#102a43] text-white">
+    <div class="w-[min(1180px,calc(100%-48px))] mx-auto py-16">
+      <p class="font-mono text-[11px] tracking-[0.12em] uppercase text-[#a8bed3]">05 / CONTACT</p>
+      <h2 class="font-serif text-[clamp(2.4rem,6vw,4.5rem)] leading-none tracking-tight mt-2">Building something<br>that needs to hold up?</h2>
+      <div class="grid lg:grid-cols-2 gap-10 mt-10">
         <div>
-          <p class="section-index">02 / SELECTED WORK</p>
-          <h2 id="work-title">Systems shipped<br>under real constraints.</h2>
+          <p class="text-[#d0dce8]">Open to backend and platform engineering opportunities — <span class="text-white font-semibold">Solo (UTC+7), remote with US/AU teams</span>. Send a message here or connect through email, LinkedIn, or GitHub.</p>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <a href="mailto:maulana@mprambadi.my.id" class="px-5 py-3 bg-white text-[#102a43] font-mono text-[11px] tracking-widest uppercase">Email me</a>
+            <a href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/" rel="me" class="px-5 py-3 border border-[#829ab1] text-white font-mono text-[11px] tracking-widest uppercase">LinkedIn</a>
+            <a href="https://github.com/mprambadi" rel="me" class="px-5 py-3 bg-white text-[#102a43] font-mono text-[11px] tracking-widest uppercase">GitHub</a>
+          </div>
+          <p class="mt-4 font-mono text-[10px] tracking-widest uppercase text-[#a8bed3]">CV: <a href="assets/maulana-prambadi-cv.pdf" download class="underline underline-offset-4">Download PDF</a> · Also: <a href="cv.html" class="underline underline-offset-4">Printable CV</a></p>
         </div>
-        <p>Selected engagements spanning high-throughput messaging, healthcare reliability, cloud platforms, and enterprise operations.</p>
-      </header>
-
-      <div class="project-list">
-        <article class="project project-featured">
-          <div class="project-meta"><span>2020—2024</span><span>Real estate platform</span></div>
-          <div class="project-body">
-            <p class="project-number">01</p>
-            <div>
-              <h3>Keller Williams / KWRI</h3>
-              <p class="project-role">Backend Engineer</p>
-              <p>Shipped 20+ production microservices and microfrontends powering KW Connect and <a href="https://agent.kw.com/command">Command</a>. Migrated legacy services from AWS to GCP, built APIs and event-driven communication workflows between services, and strengthened observability across services.</p>
-              <ul class="tag-list" aria-label="Technologies">
-                <li>Go</li><li>NestJS</li><li>GCP Pub/Sub</li><li>Kubernetes</li><li>OpenTelemetry</li>
-              </ul>
-            </div>
-          </div>
-          <div class="architecture" aria-hidden="true">
-            <span>Clients</span><i></i><span>GraphQL</span><i></i><span>Services</span><i></i><span>Pub/Sub</span>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta"><span>2026</span><span>Healthcare reliability</span></div>
-          <div class="project-body">
-            <p class="project-number">02</p>
-            <div>
-              <h3>RSUD Regional Hospital</h3>
-              <p class="project-role">Platform Engineer</p>
-              <p>Resolved chronic overload by moving from a single database path to PgBouncer with read/write replicas, cutting application CPU and load from 100% to 30%. Migrated deployment to k3s for zero-downtime releases and horizontal scaling.</p>
-              <ul class="tag-list" aria-label="Technologies"><li>PostgreSQL</li><li>PgBouncer</li><li>k3s</li></ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta"><span>2024—2026</span><span>Telecom messaging</span></div>
-          <div class="project-body">
-            <p class="project-number">03</p>
-            <div>
-              <h3>Cellcast App</h3>
-              <p class="project-role">Backend Engineer</p>
-              <p>Built Go and Node.js backends, AWS Lambdas, and an SMPP proxy handling 1 million SMS sends per hour. Added customer dashboards and HubSpot integration for message status and delivery reporting.</p>
-              <ul class="tag-list" aria-label="Technologies"><li>Go</li><li>Node.js</li><li>AWS Lambda</li><li>SMPP</li></ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta"><span>2026</span><span>Enterprise operations</span></div>
-          <div class="project-body">
-            <p class="project-number">04</p>
-            <div>
-              <h3>BSI Internal Platforms</h3>
-              <p class="project-role">Software Engineer · Mitsubishi group</p>
-              <p>Delivered timesheet, supplier portal, and canteen systems using .NET 7, EF Core, and SQL Server. Automated scheduled workflows and integrated enterprise identity across staff-facing tools.</p>
-              <ul class="tag-list" aria-label="Technologies"><li>.NET 7</li><li>EF Core</li><li>SQL Server</li><li>Quartz</li></ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta"><span>2025—2026</span><span>Enterprise learning</span></div>
-          <div class="project-body">
-            <p class="project-number">05</p>
-            <div>
-              <h3>Komatsu LMS</h3>
-              <p class="project-role">Fullstack Engineer</p>
-              <p>Delivered an enterprise learning-management system across backend, frontend, and mobile. Integrated LMS-to-HRIS authentication and shipped an AI-assisted learning module to unify employee training records.</p>
-              <ul class="tag-list" aria-label="Technologies"><li>Supabase</li><li>Kubernetes</li><li>Helm</li><li>Mobile</li></ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta"><span>2022—2024</span><span>Telecom platform</span></div>
-          <div class="project-body">
-            <p class="project-number">06</p>
-            <div>
-              <h3>Telkomsel MEA &amp; MEC</h3>
-              <p class="project-role">Fullstack Engineer</p>
-              <p>Delivered MEA as a microfrontend and microservice monorepo on Kubernetes with Keycloak authentication. Built MEC as a dedicated order-handling service with OpenAPI-generated server/client code and a type-safe RTK Query interface.</p>
-              <ul class="tag-list" aria-label="Technologies"><li>Kubernetes</li><li>Keycloak</li><li>OpenAPI</li><li>RTK Query</li></ul>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
-      <header class="section-heading">
-        <p class="section-index">03 / EXPERIENCE</p>
-        <h2 id="experience-title">A career built<br>across boundaries.</h2>
-      </header>
-      <div class="timeline">
-        <article>
-          <p class="timeline-period">2017—2026</p>
-          <div>
-            <h3>Senior Software Engineer</h3>
-            <p class="company">Refactory · Software consultancy</p>
-            <p>Shipped 40+ production services across 7+ client domains. Standardized observability and GCP Pub/Sub patterns across engagements, reducing new-project onboarding from weeks to days.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section about-section" aria-labelledby="about-title">
-      <div>
-        <p class="section-index">04 / ABOUT</p>
-        <h2 id="about-title">Breadth as leverage,<br>not noise.</h2>
-      </div>
-      <div class="about-copy">
-        <p>I work best at the seam between application code and production infrastructure: shaping service boundaries, tracing failures through distributed systems, and leaving teams with patterns they can reuse.</p>
-        <p>My foundation spans backend, cloud, data, and selective frontend work. That range helps me make platform decisions grounded in how products are actually built and operated.</p>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <p class="section-index">05 / CONTACT</p>
-      <h2 id="contact-title">Building something<br>that needs to hold up?</h2>
-      <div class="contact-grid">
-        <div>
-          <p>Open to backend and platform engineering opportunities. Send a message here or connect through email, LinkedIn, or GitHub.</p>
-          <div class="contact-actions">
-            <a class="button button-light" href="mailto:maulana@mprambadi.my.id">Email me</a>
-            <a class="button button-outline-light" href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/" rel="me">LinkedIn</a>
-            <a class="button button-light" href="https://github.com/mprambadi" rel="me">GitHub profile</a>
-            <a class="button button-outline-light" href="assets/maulana-prambadi-cv.pdf" download>Download CV</a>
-          </div>
-        </div>
-        <form class="contact-form" action="https://script.google.com/macros/s/AKfycbyF39598EeDeA8Kng0UHaRWuV4jnYBmxuCpO2H9ull5FJRn5w5AlYr437MtLXOHcFR2/exec" method="post" target="contact-response-frame" aria-label="Contact form">
-          <fieldset>
-            <legend>Contact Maulana</legend>
-            <label for="contact-name">Name</label>
-            <input id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required>
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="4" minlength="10" maxlength="3000" required></textarea>
+        <form class="contact-form space-y-3" action="https://script.google.com/macros/s/AKfycbyF39598EeDeA8Kng0UHaRWuV4jnYBmxuCpO2H9ull5FJRn5w5AlYr437MtLXOHcFR2/exec" method="post" target="contact-response-frame" aria-label="Contact form">
+          <fieldset class="m-0 p-0 border-0">
+            <legend class="mb-2 text-[#a8bed3] font-mono text-[10px] tracking-widest uppercase">Contact Maulana — protected by Cloudflare Turnstile</legend>
+            <label for="contact-name" class="block mt-3 mb-1 text-[#d0dce8] font-mono text-[10px] tracking-widest uppercase">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required placeholder="Your name" class="w-full px-3 py-2.5 bg-[#243b53] border border-[#627d98] text-white placeholder:text-[#829ab1] focus:outline-none focus:border-[#78a9ff] focus:shadow-[0_0_0_2px_#78a9ff]">
+            <label for="contact-email" class="block mt-3 mb-1 text-[#d0dce8] font-mono text-[10px] tracking-widest uppercase">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@company.com" class="w-full px-3 py-2.5 bg-[#243b53] border border-[#627d98] text-white placeholder:text-[#829ab1] focus:outline-none focus:border-[#78a9ff]">
+            <label for="contact-message" class="block mt-3 mb-1 text-[#d0dce8] font-mono text-[10px] tracking-widest uppercase">Message</label>
+            <textarea id="contact-message" name="message" rows="4" minlength="10" maxlength="3000" required placeholder="What are you building?" class="w-full px-3 py-2.5 bg-[#243b53] border border-[#627d98] text-white placeholder:text-[#829ab1] focus:outline-none focus:border-[#78a9ff]"></textarea>
             <div class="contact-honeypot" aria-hidden="true">
               <label for="contact-website">Website</label>
               <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
             </div>
             <input name="submissionId" type="hidden">
             <input name="startedAt" type="hidden">
-            <div id="contact-turnstile"></div>
-            <button type="submit" disabled>Send message</button>
-            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+            <div id="contact-turnstile" class="min-h-[65px] mt-4"></div>
+            <button type="submit" disabled class="w-full mt-3 py-3 bg-[#78a9ff] text-[#102a43] font-mono text-xs tracking-widest uppercase font-bold disabled:opacity-70 disabled:cursor-not-allowed">Send message →</button>
+            <p id="contact-status" class="contact-status min-h-[1.6em] mt-3 text-[#d0dce8] font-mono text-xs" role="status" aria-live="polite"></p>
           </fieldset>
         </form>
         <iframe id="contact-response-frame" name="contact-response-frame" title="Contact form response" hidden></iframe>
       </div>
-      <p class="contact-note">Protected by Cloudflare Turnstile. Your message is used only to reply.</p>
-    </section>
-  </main>
-
-  <footer>
-    <a class="wordmark wordmark-footer" href="#top" aria-label="Back to top">MP<span>.</span></a>
-    <p>Maulana Prambadi · Backend / Platform Engineer</p>
-    <p>Solo, Indonesia · <a href="mailto:maulana@mprambadi.my.id">Email</a> · <a href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/" rel="me">LinkedIn</a> · <a href="https://github.com/mprambadi" rel="me">GitHub</a></p>
+      <p class="mt-6 font-mono text-[10px] tracking-widest uppercase text-[#a8bed3]">Protected by Cloudflare Turnstile. Your message is used only to reply.</p>
+    </div>
+  </section>
+  <footer class="bg-[#102a43] border-t border-[#1e3a5f] text-[#a8bed3] py-6">
+    <div class="w-[min(1180px,calc(100%-48px))] mx-auto flex flex-wrap gap-4 justify-between items-center text-xs font-mono">
+      <span class="font-serif text-white text-lg">MP<span class="text-[#78a9ff]">.</span></span>
+      <span>Maulana Prambadi · Backend / Platform Engineer · Solo, Indonesia</span>
+      <span class="opacity-60">© 2026 · <a href="mailto:maulana@mprambadi.my.id" class="underline underline-offset-4">maulana@mprambadi.my.id</a></span>
+    </div>
   </footer>
+  </main>
   <script src="assets/contact.js"></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=contactTurnstileReady&amp;render=explicit" async defer onerror="contactTurnstileError()"></script>
 </body>
