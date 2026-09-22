@@ -143,10 +143,11 @@ footer a { text-underline-offset: 3px; }
 .cv-document li { margin: 3px 0; }
 .cv-skills { display: block; }
 .cv-skills strong { display: inline-block; min-width: 78px; }
-.cv-role { margin-top: 16px; break-inside: avoid-page; }
+.cv-role { margin-top: 16px; }
 .cv-role > header { display: block; }
 .cv-role > header > p { font-weight: 700; white-space: nowrap; }
-.cv-project { margin-left: 15px; padding-left: 15px; border-left: 2px solid #ccc; break-inside: avoid-page; }
+.cv-project { margin-left: 15px; padding-left: 15px; border-left: 2px solid #ccc; }
+.cv-project h4 { break-after: avoid; }
 
 @media (max-width: 760px) {
   :root { --page: min(100% - 32px, 620px); }
@@ -182,15 +183,15 @@ footer a { text-underline-offset: 3px; }
 
 @page { size: A4; margin: 10mm; }
 @media print {
-  .cv-page { background: white; font-size: 10.5pt; line-height: 1.45; }
+  .cv-page { background: white; font-size: 10.25pt; line-height: 1.4; }
   .cv-toolbar, .skip-link { display: none; }
   .cv-document { width: 100%; margin: 0; padding: 0; box-shadow: none; }
-  .cv-document section { margin-top: 11px; }
-  .cv-header { padding-bottom: 9px; }
+  .cv-document section { margin-top: 9px; }
+  .cv-header { padding-bottom: 8px; }
   .cv-document h2 { margin-bottom: 7px; }
   .cv-document ul { margin: 3px 0; }
-  .cv-document li { margin: 2px 0; }
-  .cv-role { margin-top: 8px; }
-  .cv-project h4 { margin-top: 6px; }
+  .cv-document li { margin: 1px 0; }
+  .cv-role { margin-top: 6px; }
+  .cv-project h4 { margin-top: 4px; }
   a { color: inherit; text-decoration: none; }
 }
