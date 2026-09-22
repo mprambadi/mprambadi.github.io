@@ -15,67 +15,72 @@
   </div>
   <main class="cv-document" id="cv-main">
     <header class="cv-header">
-      <div>
-        <h1>Maulana Prambadi</h1>
-        <p>Backend / Platform Engineer · 8+ years</p>
-      </div>
-      <p>Solo, Indonesia<br><a href="mailto:maulana@mprambadi.my.id">maulana@mprambadi.my.id</a><br><a href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/">LinkedIn</a> · <a href="https://github.com/mprambadi">GitHub</a><br><a href="https://mprambadi.my.id">mprambadi.my.id</a></p>
+      <h1>Maulana Prambadi</h1>
+      <p><strong>Backend / Platform Engineer | 8+ years</strong></p>
+      <p>Solo, Indonesia | <a href="mailto:maulana@mprambadi.my.id">maulana@mprambadi.my.id</a> | <a href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/">LinkedIn</a> | <a href="https://github.com/mprambadi">GitHub</a> | <a href="https://mprambadi.my.id">mprambadi.my.id</a></p>
     </header>
 
     <section class="cv-summary" aria-labelledby="summary-title">
       <h2 id="summary-title">Profile</h2>
-      <p>Backend and platform engineer who shipped 40+ production services across healthcare, real estate, telecom, fintech, government, and enterprise systems. Polyglot backend in Go, Node.js/TypeScript, and .NET, deployed across Kubernetes, GCP, AWS, and on-premises environments with production observability.</p>
+      <p>Backend and platform engineer who shipped 40+ production services across healthcare, real estate, telecom, fintech, government, and enterprise systems. Builds microservices and distributed, event-driven systems in Go, TypeScript, and C# across Kubernetes, GCP, AWS, and on-premises environments, with cloud migration, observability, tracing, monitoring, and performance optimization experience.</p>
     </section>
 
     <section aria-labelledby="skills-title">
       <h2 id="skills-title">Core Skills</h2>
       <div class="cv-skills">
-        <p><strong>Languages</strong> Go, Node.js/TypeScript, C# (.NET), PHP</p>
+        <p><strong>Languages</strong> Go, TypeScript, C#, PHP</p>
+        <p><strong>Frameworks / Runtime</strong> Node.js, NestJS, .NET</p>
         <p><strong>Platform</strong> Kubernetes, Docker, Helm, GCP, AWS, Azure</p>
         <p><strong>Systems</strong> GCP Pub/Sub, Redis, gRPC, GraphQL, REST</p>
         <p><strong>Data</strong> PostgreSQL, MySQL, SQL Server, MongoDB</p>
         <p><strong>Operations</strong> OpenTelemetry, Datadog, Sentry, LaunchDarkly</p>
+        <p><strong>CI/CD</strong> Jenkins, Azure DevOps, GitLab CI, GitHub Actions, CloudFormation</p>
       </div>
     </section>
 
     <section aria-labelledby="cv-experience-title">
       <h2 id="cv-experience-title">Experience</h2>
       <article class="cv-role">
-        <header><div><h3>Refactory</h3><p>Senior Software Engineer</p></div><p>2017—2026</p></header>
+        <header><div><h3>Refactory</h3><p>Senior Software Engineer</p></div><p>2017 - 2026</p></header>
         <ul>
           <li>Shipped 40+ production services across 7+ client domains: real estate, healthcare, government, telecom, fintech, LMS, and platform.</li>
           <li>Standardized Datadog, Sentry, OpenTelemetry, and GCP Pub/Sub patterns across engagements, cutting new-project onboarding from weeks to days.</li>
-          <li>Introduced AI-assisted development practices agency-wide, cutting boilerplate time by approximately 25%.</li>
+          <li>Built CI/CD with Jenkins, Azure DevOps, GitLab CI, and GitHub Actions for Kubernetes deploys with versioned DB migrations and zero-downtime releases.</li>
+          <li>Introduced AI-assisted development practices agency-wide to reduce repetitive implementation work.</li>
         </ul>
         <div class="cv-project">
-          <h4>Keller Williams / KWRI · Backend Engineer <span>2020—2024</span></h4>
+          <h4>Client: Keller Williams / KWRI | Backend Engineer <span>2020 - 2024</span></h4>
           <ul>
             <li>Shipped 20+ production microservices and microfrontends for KW Connect and <a href="https://agent.kw.com/command">Command</a> using Go, NestJS, Apollo GraphQL, Lumen, React, and Next.js, with service communication on GCP Pub/Sub.</li>
-            <li>Migrated a 10+ service legacy platform from AWS to GCP/GKE, built APIs and event-driven communication workflows between services, and strengthened observability across services.</li>
+            <li>Migrated a 10+ service legacy platform from AWS to GCP/GKE, designed APIs and event-driven communication workflows between distributed services, and strengthened observability across services.</li>
           </ul>
         </div>
         <div class="cv-project">
-          <h4>RSUD Regional Hospital · Platform Engineer <span>2026</span></h4>
+          <h4>Client: RSUD Regional Hospital | Platform Engineer <span>2026</span></h4>
           <ul>
             <li>Moved database access to PgBouncer with read/write replicas, cutting application CPU and load from 100% to 30%.</li>
-            <li>Migrated deployment to k3s, eliminating release downtime and enabling horizontal scaling.</li>
+            <li>Migrated deployment to k3s, eliminating release downtime and enabling horizontal scaling and high availability.</li>
           </ul>
         </div>
         <div class="cv-project">
-          <h4>Cellcast App · Backend Engineer <span>2024—2026</span></h4>
-          <ul><li>Built Go and Node.js backends, AWS Lambdas, and an SMPP proxy handling 1 million SMS sends per hour.</li></ul>
+          <h4>Client: Cellcast App | Backend Engineer <span>2024 - 2026</span></h4>
+          <ul><li>Built Go and Node.js backends, AWS Lambdas, and an SMPP proxy handling 1 million SMS sends per hour; integrated SMS delivery through a HubSpot plugin.</li><li>Separate Jenkinsfile per service for staging and live production servers plus Lambda and CloudFormation deploys.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>SEV-2 Hosted Services · Platform Engineer <span>2024—Present</span></h4>
-          <ul><li>Built and operated a multi-tenant platform with shared auth, observability, and deployment patterns.</li></ul>
+          <h4>Client: SEV-2 Hosted Services | Platform Engineer <span>2024 - 2026</span></h4>
+          <ul><li>Built and operated a multi-tenant platform with shared auth, observability, and deployment patterns.</li><li>Built Monet Intelligence Astro + React frontend with Supabase backend; Jenkins pipeline pulls, builds, and deploys changes to self-hosted Kubernetes.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Komatsu LMS · Fullstack Engineer <span>2025—2026</span></h4>
-          <ul><li>Delivered an enterprise LMS across backend, frontend, and mobile using Supabase and Kubernetes/Helm; integrated HRIS authentication and an AI-assisted learning module.</li></ul>
+          <h4>Client: Komatsu LMS | Fullstack Engineer <span>2025 - 2026</span></h4>
+          <ul><li>Delivered an enterprise LMS across backend, frontend, and mobile using Supabase and Kubernetes; integrated HRIS authentication and an AI-assisted learning module.</li><li>Azure DevOps for production Kubernetes deploys and Jenkins for staging Kubernetes deploys with versioned DB migrations.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Telkomsel MEA &amp; MEC · Fullstack Engineer <span>2022—2024</span></h4>
-          <ul><li>Delivered MEA as a Kubernetes microfrontend/microservice monorepo with Keycloak auth, and built MEC as an OpenAPI-generated order service with an RTK Query interface.</li></ul>
+          <h4>Client: Telkomsel MEA &amp; MEC | Fullstack Engineer <span>2022 - 2024</span></h4>
+          <ul><li>Delivered MEA as a Kubernetes microfrontend/microservice monorepo with Keycloak auth, and built MEC as an OpenAPI-generated order service with an RTK Query interface.</li><li>Jenkins pipelines with path-based stages for Kubernetes deploys of changed services only.</li></ul>
+        </div>
+        <div class="cv-project">
+          <h4>Client: BSI Internal Platforms | Software Engineer <span>2026</span></h4>
+          <ul><li>Built internal timesheet, supplier portal, and canteen systems using .NET 7, Quartz, SQL Server, and enterprise identity.</li></ul>
         </div>
       </article>
     </section>
