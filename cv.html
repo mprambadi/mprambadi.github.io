@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maulana Prambadi | Curriculum Vitae</title>
-  <meta name="description" content="Curriculum vitae for Maulana Prambadi, Backend and Platform Engineer.">
+  <meta name="description" content="Curriculum vitae for Maulana Prambadi, Backend Engineer.">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,500;9..144,1,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -17,78 +17,82 @@
   <main class="cv-document" id="cv-main">
     <header class="cv-header">
       <h1>Maulana Prambadi</h1>
-      <p><strong>Backend / Platform Engineer | 8+ years</strong></p>
+      <p><strong>Backend Engineer | 8+ years</strong></p>
       <p>Solo, Indonesia | <a href="mailto:maulana@mprambadi.my.id">maulana@mprambadi.my.id</a> | <a href="https://www.linkedin.com/in/maulana-prambadi-b31b47105/">LinkedIn</a> | <a href="https://github.com/mprambadi">GitHub</a> | <a href="https://mprambadi.my.id">mprambadi.my.id</a></p>
     </header>
 
     <section class="cv-summary" aria-labelledby="summary-title">
       <h2 id="summary-title">Professional Summary</h2>
-      <p>Backend and platform engineer who shipped 40+ production services across healthcare, real estate, telecom, fintech, government, and enterprise systems. Builds microservices and distributed, event-driven systems in Go, TypeScript, and C# across Kubernetes, GCP, AWS, and on-premises environments, with cloud migration, observability, tracing, monitoring, and performance optimization experience.</p>
+      <p>Backend Engineer with 8+ years shipping 40+ production services in Go, TypeScript, and C# across real estate, healthcare, telecom, fintech, government, and enterprise. Specialized in event-driven microservices on GCP Pub/Sub, Kubernetes, and PostgreSQL, including AWS-to-GCP migration and high-throughput messaging at 1M SMS/hour.</p>
     </section>
 
     <section aria-labelledby="skills-title">
       <h2 id="skills-title">Core Skills</h2>
       <div class="cv-skills">
         <p><strong>Languages</strong> Go, TypeScript, C#, PHP</p>
-        <p><strong>Frameworks and Runtimes</strong> Node.js, NestJS, .NET</p>
-        <p><strong>Cloud and Platform</strong> Kubernetes, Docker, Helm, Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure</p>
-        <p><strong>Systems</strong> GCP Pub/Sub, Redis, gRPC, GraphQL, REST</p>
-        <p><strong>Data</strong> PostgreSQL, MySQL, SQL Server, MongoDB</p>
-        <p><strong>Operations</strong> OpenTelemetry, Datadog, Sentry, LaunchDarkly</p>
-        <p><strong>CI/CD and IaC</strong> Jenkins, Azure DevOps, GitLab CI, GitHub Actions, AWS CloudFormation</p>
+        <p><strong>Frameworks</strong> Node.js, NestJS, .NET 7, React, Next.js, Astro, Vue, Flutter</p>
+        <p><strong>APIs / Messaging</strong> REST, GraphQL (Apollo), gRPC, GCP Pub/Sub, Redis, SMPP, OpenAPI, RTK Query</p>
+        <p><strong>Data</strong> PostgreSQL, PgBouncer, MySQL, SQL Server, MongoDB, Supabase</p>
+        <p><strong>Cloud / Platform</strong> Kubernetes (GKE, k3s), Docker, Helm, GCP, AWS (Lambda, CloudFormation), Azure</p>
+        <p><strong>Observability / Ops</strong> OpenTelemetry, Datadog, Sentry, Prometheus, Grafana, LaunchDarkly, Keycloak</p>
+        <p><strong>CI/CD</strong> Jenkins, GitLab CI, GitHub Actions, Azure DevOps, versioned DB migrations, zero-downtime releases</p>
       </div>
     </section>
 
     <section aria-labelledby="cv-experience-title">
       <h2 id="cv-experience-title">Experience</h2>
       <article class="cv-role">
-        <header><div><h3>Refactory</h3><p>Senior Software Engineer</p></div><p>2017 - 2026</p></header>
+        <header><div><h3>Senior Software Engineer — Refactory</h3></div><p>2017 - 2026</p></header>
+        <p>Shipped 40+ production services across 7+ client domains.</p>
         <ul>
-          <li>Shipped 40+ production services across 7+ client domains: real estate, healthcare, government, telecom, fintech, LMS, and platform.</li>
           <li>Standardized Datadog, Sentry, OpenTelemetry, and GCP Pub/Sub patterns across engagements, cutting new-project onboarding from weeks to days.</li>
           <li>Built CI/CD with Jenkins, Azure DevOps, GitLab CI, and GitHub Actions for Kubernetes deploys with versioned DB migrations and zero-downtime releases.</li>
           <li>Introduced AI-assisted development practices agency-wide to reduce repetitive implementation work.</li>
         </ul>
         <div class="cv-project">
-          <h4>Client: Keller Williams / KWRI | Backend Engineer <span>2020 - 2024</span></h4>
+          <h4>Backend Engineer — Keller Williams / KWRI <span>2020 - 2024</span></h4>
           <ul>
-            <li>Shipped 20+ production microservices and microfrontends for KW Connect and <a href="https://agent.kw.com/command">Command</a> using Go, NestJS, Apollo GraphQL, Lumen, React, and Next.js, with service communication on GCP Pub/Sub.</li>
-            <li>Migrated a 10+ service legacy platform from AWS to GCP/GKE, designed APIs and event-driven communication workflows between distributed services, and strengthened observability across services.</li>
+            <li>Shipped 20+ production microservices and microfrontends for KW Connect and <a href="https://agent.kw.com/command">Command</a> using Go, NestJS, Apollo GraphQL, Lumen, React, and Next.js on GCP Pub/Sub.</li>
+            <li>Migrated 10+ service legacy platform from AWS to GCP/GKE, including API design and event-driven workflows; strengthened cross-service observability.</li>
           </ul>
         </div>
         <div class="cv-project">
-          <h4>Client: RSUD Regional Hospital | Platform Engineer <span>2026</span></h4>
+          <h4>Platform Engineer — RSUD Regional Hospital <span>2026</span></h4>
           <ul>
-            <li>Worked on PHP and Vue applications with PostgreSQL, PgBouncer, Grafana, and Prometheus.</li>
-            <li>Moved database access to PgBouncer with read/write replicas, cutting application CPU and load from 100% to 30%.</li>
-            <li>Migrated deployment to k3s, eliminating release downtime and enabling horizontal scaling and high availability.</li>
+            <li>Moved PostgreSQL access to PgBouncer with read/write replicas for PHP/Vue app, cutting application CPU and load from 100% to 30%.</li>
+            <li>Migrated deployment to k3s, eliminating release downtime and enabling horizontal scaling and high availability; added Grafana/Prometheus monitoring.</li>
           </ul>
         </div>
         <div class="cv-project">
-          <h4>Client: Cellcast App | Backend Engineer <span>2024 - 2026</span></h4>
-          <ul><li>Built Go and Node.js backends, React.js frontend, AWS Lambdas, and an SMPP proxy handling 1 million SMS sends per hour; integrated SMS delivery through a HubSpot plugin.</li><li>Used separate Jenkinsfiles per service for staging and live production servers plus Lambda and AWS CloudFormation deploys.</li></ul>
+          <h4>Backend Engineer — Cellcast App <span>2024 - 2026</span></h4>
+          <ul><li>Built Go and Node.js backends plus React frontend and AWS Lambdas, including SMPP proxy handling 1 million SMS sends per hour; integrated HubSpot plugin for SMS delivery.</li><li>Set up separate Jenkinsfiles per service for staging and live servers plus Lambda and AWS CloudFormation deploys.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Client: SEV-2 Hosted Services | Platform Engineer <span>2024 - 2026</span></h4>
-          <ul><li>Built and operated a multi-tenant platform with shared auth, observability, and deployment patterns.</li></ul>
+          <h4>Fullstack Engineer — Telkomsel MEA &amp; MEC <span>2022 - 2024</span></h4>
+          <ul><li>Delivered MEA as a Kubernetes microfrontend/microservice monorepo with Keycloak auth; built MEC as OpenAPI-generated order service with RTK Query interface.</li><li>Built path-based Jenkins pipelines deploying only changed services to Kubernetes.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Project: Monet Intelligence - E-commerce Intelligence &amp; Recommendations | Fullstack Engineer <span>2026</span></h4>
-          <ul><li>Built a GMV intelligence platform that analyzes TikTok and Shopee data and uses LLM-powered recommendations based on GMV calculations.</li><li>Built the frontend with Astro, React, and TypeScript; integrated Supabase as the backend and delivered real-time data features.</li><li>Created Jenkins CI/CD pipeline to pull code changes, build the application, and deploy frontend and backend changes to self-hosted Kubernetes.</li></ul>
+          <h4>Fullstack Engineer — Komatsu LMS <span>2025 - 2026</span></h4>
+          <ul><li>Delivered enterprise LMS across backend, web, and mobile using React, Next.js, Flutter, Go, Supabase, Kubernetes, and Helm; integrated HRIS auth and AI-assisted learning module.</li><li>Ran Azure DevOps for production Kubernetes deploys and Jenkins for staging with versioned DB migrations.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Client: Komatsu LMS | Fullstack Engineer <span>2025 - 2026</span></h4>
-          <ul><li>Delivered an enterprise LMS across backend, web, and mobile using React, Next.js, Flutter, Go, Supabase, Kubernetes, and Helm; integrated HRIS authentication and an AI-assisted learning module.</li><li>Azure DevOps for production Kubernetes deploys and Jenkins for staging Kubernetes deploys with versioned DB migrations.</li></ul>
+          <h4>Platform Engineer — SEV-2 Hosted Services <span>2024 - 2026</span></h4>
+          <ul><li>Built and operated multi-tenant platform with shared auth, observability, and deployment patterns.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Client: Telkomsel MEA &amp; MEC | Fullstack Engineer <span>2022 - 2024</span></h4>
-          <ul><li>Delivered MEA as a Kubernetes microfrontend/microservice monorepo with Keycloak auth, and built MEC as an OpenAPI-generated order service with an RTK Query interface.</li><li>Jenkins pipelines with path-based stages for Kubernetes deploys of changed services only.</li></ul>
+          <h4>Fullstack Engineer — Monet Intelligence (E-commerce Intelligence) <span>2026</span></h4>
+          <ul><li>Built GMV intelligence platform analyzing TikTok and Shopee data with LLM-powered recommendations; frontend in Astro, React, TypeScript with Supabase backend and real-time features.</li><li>Created Jenkins CI/CD pipeline deploying frontend and backend changes to self-hosted Kubernetes.</li></ul>
         </div>
         <div class="cv-project">
-          <h4>Client: BSI Internal Platforms | Software Engineer <span>2026</span></h4>
+          <h4>Software Engineer — BSI Internal Platforms <span>2026</span></h4>
           <ul><li>Built internal timesheet, supplier portal, and canteen systems using .NET 7, Quartz, SQL Server, and enterprise identity.</li></ul>
         </div>
       </article>
+    </section>
+
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p>Bachelor's Degree — 2015</p>
     </section>
 
   </main>
