@@ -2,7 +2,7 @@
   --paper: #f4f7fb;
   --paper-deep: #e2e8f0;
   --ink: #111827;
-  --muted: #526071;
+  --muted: #334155;
   --navy: #102a43;
   --blue-soft: #d7e5ff;
   --blue-focus: #78a9ff;
@@ -11,7 +11,7 @@
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --page: min(1180px, calc(100% - 48px));
+  --page: min(1240px, calc(100% - 64px));
 }
 
 * { box-sizing: border-box; }
@@ -194,4 +194,154 @@ footer a { text-underline-offset: 3px; }
   .cv-role { margin-top: 6px; }
   .cv-project h4 { margin-top: 4px; }
   a { color: inherit; text-decoration: none; }
+}
+
+/* Portfolio art direction: production scale and Solo's landscape carry the page. */
+body.portfolio-page { background: var(--paper) !important; color: var(--ink) !important; font-family: Inter, system-ui, sans-serif; }
+body.portfolio-page [class*="font-mono"] { font-family: Inter, system-ui, sans-serif !important; letter-spacing: 0 !important; text-transform: none !important; }
+body.portfolio-page [class*="text-\[10px\]"], body.portfolio-page [class*="text-\[11px\]"], body.portfolio-page [class*="text-xs"] { font-size: 14px !important; }
+body.portfolio-page .contact-honeypot, body.portfolio-page #contact-status { font-size: 14px; }
+body.portfolio-page .expertise-section > div:first-child > p:first-child,
+body.portfolio-page #work > div > div:first-child > p:first-child,
+body.portfolio-page #experience > div:first-child > p:first-child,
+body.portfolio-page main > section:nth-last-of-type(2) > div:first-child > p:first-child,
+body.portfolio-page #contact > div > p:first-child { display: none; }
+body.portfolio-page #work article > div:first-child > span:last-child,
+body.portfolio-page #work article > div:first-child > span:first-child { font-size: 14px; }
+body.portfolio-page #work article > div:first-child > span:last-child { display: none; }
+body.portfolio-page .expertise-section > div:last-child article > div:first-child,
+body.portfolio-page #work article > div:first-child { color: var(--ink); font-size: 14px !important; font-weight: 500; letter-spacing: 0; }
+body.portfolio-page .proof-section > div div:last-child { color: #d7e5ff !important; font-size: 14px !important; }
+body.portfolio-page #contact { padding-bottom: 0; }
+body.portfolio-page #contact > div { width: var(--page); padding-bottom: 24px; }
+body.portfolio-page #contact .contact-grid { gap: 48px; }
+body.portfolio-page #contact .contact-grid > div:first-child { grid-column: 1; }
+body.portfolio-page #contact .contact-form { grid-column: 2; grid-row: 1; }
+body.portfolio-page #contact .credits { grid-column: 1 / -1; grid-row: 2; max-width: 100%; }
+body.portfolio-page #contact > div > p:last-child { max-width: 60ch; }
+body.portfolio-page > main > header { width: var(--page); min-height: 78px; border: 0; }
+body.portfolio-page > main > header > a:first-child { font-family: Inter, sans-serif; font-size: 22px; text-decoration: none; }
+body.portfolio-page nav { font-family: Inter, sans-serif; font-size: 15px; letter-spacing: 0; text-transform: none; }
+body.portfolio-page nav a:hover { color: var(--navy) !important; }
+body.portfolio-page main > section:first-of-type { width: var(--page); min-height: 680px; padding-top: 92px; padding-bottom: 96px; grid-template-columns: 1.45fr .75fr; gap: clamp(44px, 8vw, 110px); }
+body.portfolio-page main > section.place-note { width: 100%; min-height: 0; padding: 0; display: block; }
+body.portfolio-page main > section.place-detail { width: var(--page); min-height: 0; padding: 100px 0; display: grid; }
+body.portfolio-page main > section:first-of-type > div:first-child > p:first-child { font: 500 16px/1.5 Inter, sans-serif; letter-spacing: 0; text-transform: none; color: var(--ink) !important; }
+body.portfolio-page h1, body.portfolio-page h2, body.portfolio-page h3 { color: var(--ink); font-family: "Instrument Serif", Georgia, serif; }
+body.portfolio-page main > section:first-of-type h1 { max-width: 920px; font-size: clamp(62px, 7.1vw, 102px); line-height: .91 !important; letter-spacing: -.055em; }
+body.portfolio-page main > section:first-of-type h1 span { color: inherit !important; font-style: normal; font-weight: 500; }
+body.portfolio-page main > section:first-of-type > div:first-child > p:nth-of-type(2) { font-size: 18px; line-height: 1.5; color: var(--ink) !important; }
+body.portfolio-page main > section:first-of-type > div:first-child > p:nth-of-type(3) { max-width: 55ch; font-size: 17px; line-height: 1.6; color: var(--ink) !important; }
+body.portfolio-page main > section:first-of-type > div:first-child > div:nth-of-type(1) { max-width: 55ch; font-size: 15px; }
+body.portfolio-page main > section:first-of-type a { transition: transform .18s ease, background-color .18s ease; }
+body.portfolio-page main > section:first-of-type a:hover { transform: translateY(-2px); }
+body.portfolio-page main > section:first-of-type aside { background: var(--navy) !important; box-shadow: none; }
+body.portfolio-page main > section:first-of-type aside * { border-color: #334e68 !important; }
+body.portfolio-page main > section:first-of-type aside :is(span,dt) { font-family: Inter, sans-serif; font-size: 14px; letter-spacing: 0; text-transform: none; }
+body.portfolio-page main > section:first-of-type aside dd { font: 16px/1.5 Inter, sans-serif; }
+body.portfolio-page .proof-section { background: var(--navy); border-color: var(--navy); }
+body.portfolio-page .proof-section > div { border-color: #334e68; }
+body.portfolio-page .proof-section > div div:first-child { font-size: clamp(46px, 6vw, 76px); }
+body.portfolio-page .proof-section > div div:not(:first-child) { font-family: Inter, sans-serif; font-size: 15px; letter-spacing: 0; text-transform: none; }
+body.portfolio-page .proof-section > div div:last-child { font-size: 14px; }
+body.portfolio-page .proof-section > div div:nth-child(2) { font-size: 16px !important; }
+body.portfolio-page .proof-section > div div:first-child,
+body.portfolio-page #work article > div:first-child > span:first-child { font-family: "Instrument Serif", Georgia, serif; }
+body.portfolio-page #work article > div:first-child > span:first-child { font-size: 14px !important; text-transform: none; }
+body.portfolio-page #work article h3 + p { font-size: 14px !important; font-weight: 600; }
+body.portfolio-page #work article .flex.flex-wrap.gap-2 span { font-size: 13px !important; }
+body.portfolio-page #work article [class*="border-b"], body.portfolio-page #work article > div:last-child { border-color: transparent !important; }
+body.portfolio-page .expertise-section { padding-top: 100px; padding-bottom: 110px; }
+body.portfolio-page .expertise-section h2,
+body.portfolio-page #work h2,
+body.portfolio-page #experience h2,
+body.portfolio-page main > section:nth-last-of-type(2) h2 { font-size: clamp(44px, 6vw, 76px); line-height: .98 !important; }
+body.portfolio-page .expertise-section p,
+body.portfolio-page #work p,
+body.portfolio-page #experience p,
+body.portfolio-page main > section:nth-last-of-type(2) p { font-size: 16px; line-height: 1.6; color: var(--ink); }
+body.portfolio-page #work { background: var(--paper-deep); border: 0; }
+body.portfolio-page #work > div { padding-top: 100px; padding-bottom: 100px; }
+body.portfolio-page #work article,
+body.portfolio-page #work article > div { border-color: var(--line); }
+body.portfolio-page #work article h3 { font-size: clamp(28px, 3.5vw, 44px); }
+body.portfolio-page #work article span { font-family: Inter, sans-serif; font-size: 13px; letter-spacing: 0; text-transform: none; }
+body.portfolio-page #work article > div:first-child,
+body.portfolio-page #work article > p { font-size: 14px; }
+body.portfolio-page #work article [class*="font-mono"] { font-family: Inter, sans-serif; }
+body.portfolio-page #experience { padding-top: 100px; padding-bottom: 100px; }
+body.portfolio-page main > section:nth-last-of-type(2) { padding-top: 70px; }
+body.portfolio-page #contact { background: var(--navy); }
+body.portfolio-page #contact h2 { color: var(--paper) !important; font-size: clamp(48px, 7vw, 92px); }
+body.portfolio-page #contact p,
+body.portfolio-page #contact label,
+body.portfolio-page #contact legend { font-family: Inter, sans-serif; font-size: 16px; letter-spacing: 0; text-transform: none; }
+body.portfolio-page #contact input,
+body.portfolio-page #contact textarea { font: 16px Inter, sans-serif; }
+body.portfolio-page #contact footer { border-color: #547267; }
+body.portfolio-page main > footer { background: var(--navy); border-color: #334e68; }
+body.portfolio-page .place-note { width: 100%; padding: 0; background: var(--navy); color: white; }
+body.portfolio-page .place-note img { display: block; width: 100%; height: clamp(180px, 28vw, 360px); object-fit: cover; }
+body.portfolio-page .place-note p { width: var(--page); margin: 0 auto; padding: 20px 0; font-size: 16px; }
+body.portfolio-page .place-detail { width: var(--page); margin: 0 auto; padding: 100px 0; display: grid; grid-template-columns: 1.25fr .75fr; gap: 28px; align-items: center; }
+body.portfolio-page .place-detail figure { margin: 0; }
+body.portfolio-page .place-detail figure:first-child { grid-row: span 2; }
+body.portfolio-page .place-detail img { display: block; width: 100%; height: 340px; object-fit: cover; }
+body.portfolio-page .place-detail figure:first-child img { height: 620px; }
+body.portfolio-page .place-detail figcaption { padding-top: 12px; font-size: 14px; }
+body.portfolio-page .river-map { display: block; width: var(--page); height: clamp(240px, 36vw, 460px); margin: 0 auto 96px; object-fit: cover; object-position: center 42%; }
+body.portfolio-page .credits { width: var(--page); margin: 0 auto; padding: 22px 0; color: #d0dce8; font-size: 13px; line-height: 1.6; }
+body.portfolio-page :focus-visible { outline: 3px solid var(--blue-focus); outline-offset: 4px; }
+body.portfolio-page .reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease var(--reveal-delay, 0ms), transform .5s ease var(--reveal-delay, 0ms); }
+body.portfolio-page .reveal.is-visible { opacity: 1; transform: none; }
+body.portfolio-page .place-note img { animation: landscape-drift 18s ease-in-out infinite alternate; }
+@keyframes landscape-drift { from { object-position: 50% 44%; } to { object-position: 50% 56%; } }
+
+@media (max-width: 760px) {
+  body.portfolio-page main > section:first-of-type { min-height: auto; padding: 64px 0 72px; grid-template-columns: 1fr; }
+  body.portfolio-page main > section.place-note { padding: 0; display: block; }
+  body.portfolio-page main > section.place-detail { padding: 60px 0; grid-template-columns: 1fr; }
+  body.portfolio-page main > section:first-of-type h1 { font-size: clamp(58px, 14vw, 82px); }
+  body.portfolio-page main > section:first-of-type aside { max-width: none; }
+  body.portfolio-page .proof-section > div { padding: 24px 16px; }
+  body.portfolio-page .expertise-section,
+  body.portfolio-page #work > div,
+  body.portfolio-page #experience { padding-top: 68px; padding-bottom: 68px; }
+  body.portfolio-page #work article { padding: 24px 16px; }
+  body.portfolio-page #contact h2 { font-size: clamp(48px, 12vw, 66px); }
+  body.portfolio-page #contact .contact-form { grid-column: auto; grid-row: auto; }
+  body.portfolio-page #contact .credits { grid-column: auto; grid-row: auto; }
+  body.portfolio-page .place-detail { padding: 60px 0; grid-template-columns: 1fr; gap: 28px; }
+  body.portfolio-page .place-detail figure:first-child { grid-row: auto; }
+  body.portfolio-page .place-detail img, body.portfolio-page .place-detail figure:first-child img { height: 280px; }
+  body.portfolio-page .river-map { height: 240px; margin-bottom: 60px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.portfolio-page *, body.portfolio-page *::before, body.portfolio-page *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation: none !important; }
+  body.portfolio-page .reveal { opacity: 1; transform: none; }
+}
+
+/* CV pages: clean, ink-first editorial sheet; keep screen and print structure identical. */
+.cv-page { background: #e8e5dc; color: var(--ink); font-size: 16px; }
+.cv-toolbar { width: min(960px, calc(100% - 40px)); margin: 22px auto; }
+.cv-toolbar a { color: var(--navy); }
+.cv-toolbar button { min-height: 44px; padding: 12px 18px; background: var(--navy); }
+.cv-document { width: min(960px, calc(100% - 40px)); margin: 0 auto 48px; padding: clamp(32px, 6vw, 72px); box-shadow: none; }
+.cv-header { padding-bottom: 28px; border-bottom: 4px solid var(--navy); }
+.cv-header h1 { margin: 0; color: var(--navy); font-size: clamp(40px, 7vw, 68px); }
+.cv-header p { max-width: 72ch; }
+.cv-document section { margin-top: 34px; }
+.cv-document h2 { color: var(--navy); font-size: 18px; border: 0; }
+.cv-document h3 { font-size: 20px; }
+.cv-document h4 { font-size: 16px; }
+.cv-document p, .cv-document li { line-height: 1.55; }
+.cv-role > header { display: flex; justify-content: space-between; gap: 20px; }
+.cv-role > header > p { margin-top: 0; }
+.cv-project { margin-top: 22px; padding: 0 0 0 18px; border-left: 3px solid var(--paper-deep); }
+
+@media (max-width: 760px) {
+  .cv-page { font-size: 15px; }
+  .cv-document { width: calc(100% - 24px); padding: 28px 22px; }
+  .cv-role > header { display: block; }
 }
