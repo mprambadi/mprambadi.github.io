@@ -28,18 +28,18 @@
     <circle cx="1286" cy="233" r="4"/>
   </g>
   <g font-family="Arial, Helvetica, sans-serif" fill="#fff">
-    <text x="430" y="95" font-size="16" letter-spacing="4" fill="#a8bed3">MAULANA PRAMBADI  /  BACKEND ENGINEER</text>
-    <text x="430" y="171" font-size="46" font-weight="700" letter-spacing="-1.5">Backend systems, built</text>
-    <text x="430" y="224" font-size="46" font-weight="700" letter-spacing="-1.5">to scale reliably.</text>
-    <text x="432" y="276" font-size="18" fill="#d0dce8">Go · TypeScript · C#   /   Microservices · APIs · Event-driven systems</text>
+    <text x="430" y="95" font-size="16" letter-spacing="4" fill="#a8bed3">MAULANA PRAMBADI  /  BACKEND ENGINEER · 8+ YEARS</text>
+    <text x="430" y="171" font-size="46" font-weight="700" letter-spacing="-1.5">Event-driven backends,</text>
+    <text x="430" y="224" font-size="46" font-weight="700" letter-spacing="-1.5">built for production scale.</text>
+    <text x="432" y="276" font-size="18" fill="#d0dce8">Go · TypeScript · C#   /   Microservices · GCP Pub/Sub · PostgreSQL</text>
   </g>
   <g font-family="Arial, Helvetica, sans-serif" fill="#fff">
     <text x="1370" y="154" text-anchor="middle" font-size="34" font-weight="700">40+</text>
-    <text x="1370" y="180" text-anchor="middle" font-size="11" letter-spacing="1.4" fill="#c4d3e3">SERVICES</text>
+    <text x="1370" y="180" text-anchor="middle" font-size="11" letter-spacing="1.4" fill="#c4d3e3">PROD. SERVICES</text>
     <path d="M1335 198h70" stroke="#78a9ff" stroke-opacity=".55"/>
-    <text x="1370" y="239" text-anchor="middle" font-size="26" font-weight="700">1M/hr</text>
-    <text x="1370" y="263" text-anchor="middle" font-size="11" letter-spacing="1.4" fill="#c4d3e3">MESSAGES</text>
+    <text x="1370" y="239" text-anchor="middle" font-size="26" font-weight="700">1M SMS/hr</text>
+    <text x="1370" y="263" text-anchor="middle" font-size="11" letter-spacing="1.4" fill="#c4d3e3">THROUGHPUT</text>
   </g>
   <rect x="430" y="319" width="72" height="4" fill="#78a9ff"/>
-  <text x="516" y="326" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2" fill="#a8bed3">API DESIGN  ·  MICROSERVICES  ·  DISTRIBUTED SYSTEMS</text>
+  <text x="516" y="326" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2" fill="#a8bed3">BACKEND ENGINEERING  ·  API DESIGN  ·  DISTRIBUTED SYSTEMS</text>
 </svg>
